@@ -1,29 +1,42 @@
+let suits = ['hearts', 'diams', 'clubs', 'spades']
+let ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A']
+
+let deck = []
 const main = () => {
-  let suits = ['hearts', 'diams', 'clubs', 'spades']
-  let ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A']
-
-  let deck = []
-
+  makeDeck()
+  shuffleDeck()
+}
   // make a function that creates a deck
   const makeDeck = () => {
-    deck = []
-
-    // for each type of suit
     for (let i = 0; i < suits.length; i++) {
       // and for each rank
       for (let j = 0; j < ranks.length; j++) {
+    // for each type of suit
+  }Console.log('starting shuffle')
+  for (let i=0; i< suit.length; i++)
+ {
+   for (let j = 0; j < rank.length; j++) {
+     //create card object
+     const card= {
+      suit: suit [i],
+      rank: rank[j] 
+     }
+   deck.push (card)
+ } }
+  }
+console.log (deck
+      )
+  const shuffleDeck = () => {
+    // Shuffle the deck
+    for (let i = 0; i < suits.length; i++) {
+      // and for each rank
         // make a card
         let card = {}
         card.suit = suits[i]
         card.rank = ranks[j]
-
-        deck.push(card)
       }
+      deck.push(card)
     }
-  }
-
-  const shuffleDeck = () => {
-    // Shuffle the deck
   }
 
   const drawCard = () => {
@@ -62,8 +75,6 @@ const main = () => {
     }
   }
 
-  makeDeck()
-  shuffleDeck()
   drawCard()
 
   // let randIndex = Math.floor(Math.random() * deck.length)
